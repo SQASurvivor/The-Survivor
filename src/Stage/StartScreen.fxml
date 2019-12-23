@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-border-color: #600000; -fx-border-width: 15; -fx-background-color: snow;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.Controller">
+   <children>
+      <Button fx:id="startB" layoutX="420.0" layoutY="448.0" mnemonicParsing="false" onAction="#pressbuttonStart" prefHeight="60.0" prefWidth="160.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: gold; -fx-border-radius: 20; -fx-border-width: 3;" text="Game Start">
+         <font>
+            <Font name="Chalkboard Bold" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="185.0" fitWidth="520.0" layoutX="240.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@title.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

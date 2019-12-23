@@ -1,0 +1,31 @@
+
+
+.table-view .column-header{
+	-fx-background-color: snow;
+	-fx-font-size: 20;
+	-fx-border-width: 2px;
+	-fx-border-radius: 10;
+	-fx-border-color: gold;
+	-fx-border-insets: 4;
+	-fx-font-family: Chalkboard;
+}
+
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected{
+    -fx-background: aliceblue;
+}
+
+.table-cell {
+	-fx-background-color: snow;
+	-fx-font-size:15;
+	-fx-border-width: 2px;
+	-fx-border-radius: 5;
+	-fx-border-color: beige;
+}
+
+.table-row-cell {
+	-fx-alignment: center;
+}
+
+.table-column {
+	-fx-alignment: center;
+}
