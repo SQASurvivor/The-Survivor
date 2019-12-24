@@ -17,6 +17,7 @@ import Scene.Background;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
 import javafx.scene.input.KeyEvent;
+import javafx.stage.Stage;
 
 public class Gamemanager {
 	private Group root;
@@ -114,6 +115,9 @@ public class Gamemanager {
         try {
         	
 			showScore.switchwin();
+			Stage stage = (Stage)root.getScene().getWindow();
+			stage.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
