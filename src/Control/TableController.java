@@ -2,6 +2,7 @@ package Control;
 
 import Character.User;
 import Check.SortScore;
+import Stage.StartStage;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,7 +18,7 @@ public class TableController {
 	private TableView<User> scoreT;
 	
 	@FXML
-	private Button closeB;
+	private Button backB;
 	
 	@FXML
 	private TableColumn<User, Integer> Col1;
@@ -54,10 +55,13 @@ public class TableController {
 	/**
 	 * Close bottom, press to close stage
 	 * @param event action event 
+	 * @throws Exception 
 	 */
 	@FXML
-	public void pressbuttonClose(ActionEvent event) {	
-		Stage stage = (Stage)closeB.getScene().getWindow();
+	public void pressbuttonBack(ActionEvent event) throws Exception {	
+		Stage stage = (Stage)backB.getScene().getWindow();
+		StartStage open = new StartStage();
+		open.switchtowin();
 		stage.close();
 	}
 	
